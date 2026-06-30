@@ -154,7 +154,7 @@ TEST_CASE("Benchmark") {
     
     CHECK(data == data_copy);
     INFO("std::sort is " << time_qs / time_std << " times faster");
-    CHECK(time_qs.count() < time_std.count() * 5.0);
+    CHECK(time_qs.count() < time_std.count() * 3.0);
 }
 
 
