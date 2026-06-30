@@ -4,4 +4,8 @@ CompileFlags:
   Remove:
     - -fmodules-ts
     - -fmodule-mapper=*
+<<<<<<< HEAD
     - -fdeps-format=*
+=======
+    - -fdeps-format=*
+>>>>>>> f8a061e (Syncing tasks)

@@ -153,4 +153,9 @@ else()
 endif()
 
 add_if_exists(string-operations)
+<<<<<<< HEAD
 add_if_exists(algo/quick-sort)
+=======
+
+add_if_exists(quicksort)
+>>>>>>> f8a061e (Syncing tasks)
