@@ -116,7 +116,7 @@ TEST_CASE("Comparison with std::sort") {
 
 TEST_CASE("Comparator Calls Count") {
     struct CountingLess {
-        int& count;
+        size_t& count;
         bool operator()(int a, int b) const { 
             ++count; 
             return a < b; 
@@ -125,7 +125,7 @@ TEST_CASE("Comparator Calls Count") {
 
     const size_t n = 1000;
     std::vector<int> data(n, 42); // Все элементы равны
-    int comparisons = 0;
+    size_t comparisons = 0;
     
     QuickSort(std::span{data}, CountingLess{comparisons});
 
